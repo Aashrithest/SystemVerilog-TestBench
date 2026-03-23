@@ -7,7 +7,7 @@ module sr_ff (input clk,
 
       always @(posedge clk or posedge rst) begin
 	      if(rst) 
-		      q <= 0;
+		      q <= 0; 
 	      else begin
 		      case({s,r})
 			      2'b00: q <= q;
